@@ -1,3 +1,3 @@
-# Hack-Club-DOM-Intro
+# Hack Club DOM Intro
 
 ## Dowload and open main.js!
