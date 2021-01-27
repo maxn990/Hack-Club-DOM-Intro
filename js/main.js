@@ -31,17 +31,21 @@ https://www.w3schools.com/js/js_htmldom.asp
 
 
 // First, let's use the DOM to connect our button to javascript.
-
+document.getElementById("submit").addEventListener(/* what triggers the event */"click", /* what event is triggered */editCard);
 // This is the function that will run when we submit
 function editCard(){
   // First, lets get the user input and save it to variables. This also uses DOM
-
+  var cardText = document.getElementById("cardText").value;
+  var image = document.getElementById("cardBackgroundImage").value;
+  var cardFromText = document.getElementById("cardFromText").value;
 
   // The second and final step is to change the values in our card.
-
+  document.getElementById("mainMessage").innerHTML = cardText;
+  document.getElementById("cardSender").innerHTML = cardFromText;
 
   // Now that we've changed those values, we want to change the background
   // by editing the style of our element. In this case, we want to change the
   // style.
+  document.getElementById("cardImage").style.backgroundImage = 'url('+image+')';
 
 }
